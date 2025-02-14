@@ -128,13 +128,11 @@ section.animate{
 .hero-content img{
   width: 58%;
   height: auto;
-  /* border-radius: 100px 100px 150px 150px; */
   margin-top: 20px;
   margin-bottom: 0;
   position: relative;
   top: -20px;
   object-fit: cover;
- /* stopped here trying to make the image flow from the right */
 }
 .hero-desc{
   width: 100%;
@@ -204,7 +202,6 @@ button:hover{
 /* Card section */
 
 .card-container{
-  /* position: relative; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -226,8 +223,6 @@ button:hover{
   height:auto;
 }
 .card{
-
-  /* background-image: linear-gradient(to right, var(--primary-color),#080d20, #622210); */
   background-color: transparent;
   border: none;
 
@@ -236,10 +231,7 @@ button:hover{
   background-color: #071226;
 }
 
-/* .card-container>.card-content:hover{
-  box-shadow: 0 0 15px #fff;
-  transform: translate(-10px, -10px);
-} */
+
 .col-md-4{
   padding: 0;
 }
@@ -385,7 +377,6 @@ text-align: justify;
 .carousel{
   padding: 64px;
   padding-bottom: 0;
-  /* margin:30px 30px; */
   
 }
 .carousel-title{
@@ -639,7 +630,6 @@ background-clip: text;
   align-items: center;
   margin-top: 30px;
 position: relative;
-/* top: 400px; */
 
 }
 
@@ -858,9 +848,7 @@ dialog button{
   nav ul li{
       padding: 20px;
   }
-  /* #navList{
-      transition: maxHeight 0.5 ease-in-out;
-  } */
+ 
   nav ul.open{
       max-height: 100vh;
   }

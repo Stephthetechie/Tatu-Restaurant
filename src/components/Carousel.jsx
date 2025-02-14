@@ -12,7 +12,6 @@ const Carousel = () => {
         <div>
             <section>
                 <div className="carousel slide animate showAnimate" id="carouselExample" ref={carouselRef} data-bs-ride="carousel">
-                    {/* Fixed `data-bs-target` */}
                     <div className="carousel-indicators">
                         {foodItems.map((_, index) => (
                             <button

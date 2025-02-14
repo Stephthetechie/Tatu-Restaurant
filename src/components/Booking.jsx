@@ -22,10 +22,7 @@ const Booking = () => {
         setEmail("");
         setDate("");
         setTime("");
-        // <FormDialog 
-        // info="booking"
-        // userName={name} 
-        // onClose={()=> setIsDialogOpen(false)}/>
+
         
         
     }
