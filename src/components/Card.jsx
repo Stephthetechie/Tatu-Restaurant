@@ -19,7 +19,7 @@ const Card = () => {
                     <div className="card-body">
                         <h2>New Menu Launched!</h2>
                         <p className="card-text">Indulge in our signature Lemon Butter Chicken, made with tender chicken breast, zesty lemon, and rich butter, all perfectly balanced to create a dish that will leave you wanting more. Try it out today and taste the difference for yourself!</p>
-                        <a href="" onClick={handleCardMenu}>Try It Out!</a>
+                        <a href="#menu" onClick={handleCardMenu}>Try It Out!</a>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@ const Card = () => {
                     <div className="card-body">
                         <h2>Book A Table</h2>
                         <p className="card-text">Experience the best of fine dining at Tatu Restaurant. Book a table now and enjoy a culinary journey with our expertly crafted dishes, made with fresh ingredients and a passion for flavor.</p>
-                        <a href="#" id="book-now" onClick={handleCardBooking}>Book Now</a>
+                        <a href="#booking" id="book-now" onClick={handleCardBooking}>Book Now</a>
                     </div>
                 </div>
 

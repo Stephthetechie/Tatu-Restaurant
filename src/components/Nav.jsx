@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Hero from './Hero';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
