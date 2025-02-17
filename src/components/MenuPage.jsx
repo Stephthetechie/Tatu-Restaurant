@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { foodItems} from './FoodItems'
 // import { NavContext } from './NavContext'
@@ -7,8 +7,7 @@ const MenuPage = () => {
     const navigate = useNavigate();
     // const {toggleMenu} = useContext(NavContext);
     const dishes = foodItems[category];
-    console.log('Category:', category);
-    console.log('Dishes:', dishes);
+   
 
     if(!dishes){
         return <h2>Food not found!</h2>
