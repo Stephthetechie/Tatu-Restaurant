@@ -18,7 +18,7 @@ const Contact = (props) => {
         }
 
         
-        setIsDialogOpen(true);
+        setTimeout(() => setIsDialogOpen(true), 500);
         setName("");
         setEmail("");
         setMessage("");
@@ -29,7 +29,7 @@ const Contact = (props) => {
     <div>
        <section className='contact-sec'>
         <div className="contact-img">
-            <img src="./images/mobile-view-1.png" alt="" />
+            <img src="./images/mobile-hand-view.png" alt="" />
         </div>
             <div className="contact showAnimate" id="contact">
                 <div className="left-side animate">

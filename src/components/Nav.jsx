@@ -1,29 +1,35 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
+import { NavContext } from './NavContext';
 
-const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+ export const Nav = () => {
+  const {isOpen, toggleMenu} = useContext(NavContext);
+  const navigate = useNavigate();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  }
-  const handleLogoClick =()=>{
-    document.getElementById('home').scrollIntoView({behavior:'smooth'})
+
+    const handleNavClick =(sectionId)=>{
+    navigate('/');
+    setTimeout(() => {
+          document.getElementById(sectionId)?.scrollIntoView({behavior:'smooth'})
+    }, 100);
+    toggleMenu();
   }
 
 
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="logo" onClick={handleLogoClick}>
-                <img src="./images/Tatu_logo_orange.svg" alt="Little Lemon Logo" id='logo'/>
+            <div className="logo" onClick={handleNavClick}>
+                <img src="/images/Tatu_logo_orange.svg" alt="Tatu Restaurant Logo" id='logo'/>
             </div>
             <ul id="navList" className={isOpen? "open" : ""}>
-                <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-                <li><a href="#blog" onClick={toggleMenu}>Blog</a></li>
-                <li><a href="#about" onClick={toggleMenu}>About</a></li>
-                <li><a href="#menu" onClick={toggleMenu}>Menu</a></li>
-                <li><a href="#contact" onClick={toggleMenu}>Contact Us</a></li>
-                <li><a href="#booking" onClick={toggleMenu}>Bookings</a></li>
+                <li><Link to="/" onClick={()=>handleNavClick('home')}>Home</Link></li>
+                <li><Link to="/" onClick={()=>handleNavClick('blog')}>Blog</Link></li>
+                <li><Link to="/" onClick={()=>handleNavClick('about')}>About</Link></li>
+                <li><Link to="/" onClick={()=>handleNavClick('menu')}>Menu</Link></li>
+                <li><Link to="/" onClick={()=>handleNavClick('booking')}>Booking</Link></li>
+                <li><Link to="/" onClick={()=>handleNavClick('contact')}>Contact Us</Link></li>
+               
             </ul>
             <div className="menu-icon" id="navIcon" >
                 <i className={isOpen? "fas fa-xmark" : "fas fa-bars"} onClick={toggleMenu}></i>
@@ -33,4 +39,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default Nav;

@@ -35,7 +35,7 @@ function App() {
             <Route path="/card" element={<Card/>} />
             <Route path="/contact" element={<Contact/>} />
             <Route path="/menu" element={<Carousel/>} />
-            <Route path="/menu/:id" element={<MenuPage/>} />
+            <Route path="/menu/:category" element={<MenuPage/>} />
             <Route path="/form" element={<FormDialog/>} />
           </Routes>
      <Footer/>

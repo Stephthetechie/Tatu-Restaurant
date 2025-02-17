@@ -11,7 +11,7 @@ const Hero = () => {
           {/* <img src="./images/chef-plating.jpg" className="animate" alt=""/> */}
           <div className="hero-desc animate">
             <h1>Welcome to Tatu Restaurant!</h1>
-            <p>Experience the epitome of fine dining at Tatu, where every bite is a masterclassName in culinary innovation.</p>
+            <p>Experience the epitome of fine dining at Tatu, where every bite is a masterclass in culinary innovation.</p>
             <p>So why wait? Book your table now and experience the TATU difference!</p>
             <div className="hero-button">
               <button onClick={handleHeroBooking}>Book Now</button>

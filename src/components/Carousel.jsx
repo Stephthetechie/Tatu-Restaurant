@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import foodItems from './FoodItems';
+import {foodCategory} from './FoodItems';
 import { useNavigate } from 'react-router-dom';
 
 const Carousel = () => {
@@ -13,7 +13,7 @@ const Carousel = () => {
             <section>
                 <div className="carousel slide animate showAnimate" id="carouselExample" ref={carouselRef} data-bs-ride="carousel">
                     <div className="carousel-indicators">
-                        {foodItems.map((_, index) => (
+                        {foodCategory.map((_, index) => (
                             <button
                                 key={index}
                                 type="button"
@@ -26,10 +26,10 @@ const Carousel = () => {
                     </div>
                     <h1 className="carousel-title" id="menu">Our Menu</h1>
                     <div className="carousel-inner">
-                        {foodItems.map((item, index) => (
-                            <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`} onClick={()=> navigate(`/menu/${item.id}`)}>
+                        {foodCategory.map((item, index) => (
+                            <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`} onClick={()=> window.open(`/menu/${item.category}`, "_blank")}>
                                 <img src={item.src} className="d-block mx-auto" alt={item.alt} />
-                                <h2>{item.title}</h2>
+                                <h2>{item.category}</h2>
                             </div>
                         ))}
                     </div>

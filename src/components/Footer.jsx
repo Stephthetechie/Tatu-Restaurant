@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-info">
           <div className="footer-logo">
           {/* <h3>Tatu Restaurant</h3> */}
-            <img src="./images/Tatu_logo_orange.svg" alt="Little Lemon Logo" />
+            <img src="/images/Tatu_logo_orange.svg" alt="Little Lemon Logo" />
           </div>
           <div className="footer-info-links">
           <p>3 Sling Drive, Victoria Island, Lagos, Nigeria.</p>
