@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { foodItems} from './FoodItems'
-import { NavContext } from './NavContext'
+// import { NavContext } from './NavContext'
 const MenuPage = () => {
     const {category} = useParams();
     const navigate = useNavigate();
-    const {toggleMenu} = useContext(NavContext);
+    // const {toggleMenu} = useContext(NavContext);
     const dishes = foodItems[category];
     console.log('Category:', category);
     console.log('Dishes:', dishes);

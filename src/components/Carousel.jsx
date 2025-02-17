@@ -1,9 +1,7 @@
 import React, { useRef } from 'react';
 import {foodCategory} from './FoodItems';
-import { useNavigate } from 'react-router-dom';
 
 const Carousel = () => {
-    const navigate = useNavigate();
     const carouselRef = useRef(null);
 
     
