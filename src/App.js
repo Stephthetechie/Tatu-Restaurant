@@ -12,6 +12,7 @@ import Carousel from './components/Carousel';
 import Footer from './components/Footer';
 import FormDialog from './components/FormDialog';
 import MenuPage from './components/MenuPage';
+import CancellationPolicy from './components/CancellationPolicy';
 function App() {
   return (
     <Router>
@@ -37,6 +38,7 @@ function App() {
             <Route path="/menu" element={<Carousel/>} />
             <Route path="/menu/:category" element={<MenuPage/>} />
             <Route path="/form" element={<FormDialog/>} />
+            <Route path="/cancellation-policy" element={<CancellationPolicy/>} />
           </Routes>
      <Footer/>
     </div>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import FormDialog from './FormDialog';
+import { Link } from 'react-router-dom';
+
 
 const Booking = () => {
     const [name, setName] = useState("");
@@ -78,7 +80,10 @@ const Booking = () => {
                                 checked={isChecked}
                                 required
                             />
-                            <label htmlFor="policy-checkbox">I agree to the cancellation policy</label>
+                            <div className="booking-check">
+                                <label htmlFor="policy-checkbox">I agree to the cancellation policy</label>
+                            <Link to="/cancellation-policy" target="_blank" rel="noopener noreferrer"> <span> Read Policy</span></Link>
+                            </div>
                         </div>
 
                         <button type="submit">Book Now</button>
