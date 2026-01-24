@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { foodItems} from './FoodItems'
 // import { NavContext } from './NavContext'

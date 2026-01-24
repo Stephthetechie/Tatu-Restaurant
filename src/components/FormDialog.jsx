@@ -1,4 +1,3 @@
-import React from 'react'
 
 const FormDialog = ({ info, userName, onClose }) => {
     
