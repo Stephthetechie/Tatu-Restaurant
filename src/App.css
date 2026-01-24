@@ -1029,7 +1029,7 @@ dialog button{
   }
  
   nav ul.open{
-      max-height: 100vh;
+      max-height: 90vh;
   }
   .menu-icon{
       display: block;
@@ -1384,68 +1384,7 @@ dialog button{
     padding: 10px;
   }
 
-  /* Cancellation Policy */
-.cancellation-policy{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 18px;
-  margin: 10px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  background-color: rgba(0,0,0,0.5);
-  color: #fff;
-}
-.cancellation-policy h2{
-  font-size: 25px;
-  margin: 20px;
-  text-align: center;
-  background-image: linear-gradient(to bottom right, var(--secondary-color), #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.cancellation-policy p{
-  font-size: 16px;
-  text-align: justify;
-  line-height: 30px;
   
-}
-#policy-thank{
-  width: 80%;
-  margin-top: 20px;
-}
-.cancellation-policy-info{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: baseline;
-}
-.cancellation-policy-info h3{
-  font-size: 20px;
-  margin: 10px;
-  text-align: center;
-  background-image: linear-gradient(to bottom right, var(--secondary-color), #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.cancellation-policy button{
-  display: block;
-     margin: 20px;
-  color: #fff;
-  font-size: 25px;
-  text-align: center;
-  background-color: var(--secondary-color);
-  padding:10px 18px;
-  border-radius: 20px;
-  transition: 0.3s ease-in-out;
-  border: transparent;
-  text-decoration: none;
-  text-decoration-style: none;
-}
-
 }
 
 /* 
