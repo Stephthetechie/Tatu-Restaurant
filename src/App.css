@@ -1386,8 +1386,8 @@ dialog button{
  /* Cancellation Policy */
 .cancellation-policy{
   flex-direction: column;
-  padding: 30px;
-  margin: 40px;
+  padding: 15px;
+  margin: 15px;
   
 }
   .cancellation-policy h2{
