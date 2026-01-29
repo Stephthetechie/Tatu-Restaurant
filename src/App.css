@@ -1383,8 +1383,42 @@ dialog button{
     gap: 20px;
     padding: 10px;
   }
-
+ /* Cancellation Policy */
+.cancellation-policy{
+  flex-direction: column;
+  padding: 30px;
+  margin: 40px;
   
+}
+  .cancellation-policy h2{
+  font-size: 25px;
+  margin: 15px;
+  text-align: center;
+  
+}
+#policy-thank{
+  width: 100%;
+  margin-top: 20px;
+}
+.cancellation-policy-info h3{
+  font-size: 16px;
+  margin: 10px;
+  
+}
+.cancellation-policy button{
+  display: block;
+     margin: 20px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding:10px 18px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  border: transparent;
+  text-decoration: none;
+  text-decoration-style: none;
+}
 }
 
 /* 
